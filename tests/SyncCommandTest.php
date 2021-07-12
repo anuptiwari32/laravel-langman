@@ -2,6 +2,9 @@
 
 class SyncCommandTest extends TestCase
 {
+    // public function createApplication(){
+    //     //...
+    // }
     public function testCommandOutputForFile()
     {
         array_map('unlink', glob(__DIR__.'/views_temp/user/index.blade.php'));

@@ -5,6 +5,9 @@ use Mockery as m;
 
 class MissingCommandTest extends TestCase
 {
+    // public function createApplication(){
+    //     //...
+    // }
     public function testCommandOutput()
     {
         $manager = $this->app[Manager::class];

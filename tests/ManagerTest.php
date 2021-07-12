@@ -5,6 +5,9 @@ use Mockery as m;
 
 class ManagerTest extends TestCase
 {
+    // public function createApplication(){
+    //     //...
+    // }
     public function testFilesMethod()
     {
         $manager = $this->app[\Themsaid\Langman\Manager::class];

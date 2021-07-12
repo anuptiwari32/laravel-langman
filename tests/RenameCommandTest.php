@@ -2,6 +2,11 @@
 
 class RenameCommandTest extends TestCase
 {
+    
+    
+    // public function createApplication(){
+    //     //...
+    // }
     public function testRenameAKeyValue()
     {
         $this->createTempFiles([

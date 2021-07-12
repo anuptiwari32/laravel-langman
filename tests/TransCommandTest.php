@@ -5,6 +5,9 @@ use Themsaid\Langman\Manager;
 
 class TransCommandTest extends TestCase
 {
+    // public function createApplication(){
+    //     //...
+    // }
     public function testCommandErrorOutputOnMissingKey()
     {
         $this->createTempFiles();
@@ -61,7 +64,7 @@ class TransCommandTest extends TestCase
         $this->app['artisan']->add($command);
         $this->artisan('langman:trans', ['key' => 'users.name']);
 
-        $this->assertFileNotExists($this->app['config']['langman.path'].'/en/users.php');
+        $this->assertFileDoesNotExist($this->app['config']['langman.path'].'/en/users.php');
     }
 
     public function testCommandCreatesFileIfNotFoundWhenConfirmed()

@@ -5,6 +5,9 @@ use Mockery as m;
 
 class RemoveCommandTest extends TestCase
 {
+    // public function createApplication(){
+    //     //...
+    // }
     public function testCommandOutput()
     {
         $manager = $this->app[Manager::class];

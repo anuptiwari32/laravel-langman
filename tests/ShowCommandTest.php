@@ -2,6 +2,9 @@
 
 class ShowCommandTest extends TestCase
 {
+    // public function createApplication(){
+    //     //...
+    // }
     public function testCommandErrorOnFileNotFound()
     {
         $this->createTempFiles();
